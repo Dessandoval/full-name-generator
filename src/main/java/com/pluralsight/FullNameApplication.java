@@ -21,14 +21,14 @@ public class FullNameApplication {
 
         System.out.println("Please enter your middle initial: ");
         String userMiddleInitial = scanner.nextLine();
-        if (!userMiddleInitial.isEmpty()){
+        if (!userMiddleInitial.isBlank()){
             userFullName = String.format("%s %s.", userFullName, userMiddleInitial);
         }
         userFullName = String.format("%s %s", userFullName, userLastName);
 
         System.out.println("Please enter suffix: ");
         String userSuffix = scanner.nextLine();
-        if (!userSuffix.isEmpty()){
+        if (!userSuffix.isBlank()){
             userFullName = String.format("%s, %s", userFullName, userSuffix);
         }
 
